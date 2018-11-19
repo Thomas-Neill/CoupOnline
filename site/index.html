@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coup Online!</title>
+  <style>
+    * {
+      padding: none;
+      margin: none;
+      font-family: "Arial";
+    }
+    body {
+      background-color: #435383;
+    }
+    #choices div:hover {
+      background-color: #B9B9B9;
+    }
+    #history {
+      border: 0.1vh solid black;
+      background-color: #A9A9A9;
+    }
+    #main {
+      margin: auto;
+      width: 50%;
+      background-color: #536393;
+      border-radius: 5%;
+      padding: 1% 5%;
+    }
+    h1,h2,h3 {
+      text-align: center;
+      font-weight: normal;
+    }
+    #balances {
+      display: flex;
+    }
+    #balances div {
+      background-color: #A9A9A9;
+      text-align: center;
+      flex-basis: 0;
+      flex-grow: 1;
+      margin: 1%;
+    }
+    #choices {
+      display: flex;
+    }
+    #choices div {
+      background-color: #A9A9A9;
+      text-align: center;
+      flex-basis: 0;
+      flex-grow: 1;
+      margin: 1%;
+    }
+  </style>
+</head>
+<body>
+  <script src="main.js"></script>
+  <div id="main">
+    <h1> Coup: Online Version</h1>
+    <h1 id="status">
+      Waiting for other players...
+    </h1>
+    <div id="balances">
+      <div id='player1'></div> <div id='player2'></div> <div id='player3'></div> <div id='player4'></div>
+    </div>
+    <h2 id="cards"></h2>
+    <p id="history">
+      <b>History</b><br/>
+    </p>
+    <h3 id="choose_desc"></h3>
+    <div id="choices">
+    </div>
+  </div>
+</body>
+</html>
